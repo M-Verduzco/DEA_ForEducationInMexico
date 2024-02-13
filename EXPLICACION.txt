@@ -1,0 +1,18 @@
+La base de datos citada fue descargada como archivo csv.
+Fue limpiada de columnas y renglones inecesarios tales como títulos, outliers y registros incompletos. 
+El archivo fue guardado como xlsx bajo el nombre "datos2"
+El archivo "PRMCFile2" debe ser abierto con R studio para poder ejecutar sus funciones.
+	Observaciones:
+		Se deben instalar las librerias en las primeras líneas de código.
+		Se debe asegurar que la dirección del archivo de "datos2" sea correcta según la computadora que lo ejecute.
+		Se debe configurar la dirección en la que se guardará el archivo de Excel con los resultados.
+El archivo de R importa los datos de nuestra base de datos, los convierte en un data frame con los nombres adecuados.
+Se eligen los vectores de entrada y salida para ejecutar nuestro algoritmo DEA con ayuda de la librería benchmarking.
+Los resultados de eficiencia se almacenan en un nuevo dataframe junto con los nombres de las universidades y sus cantidades de profesores.
+Dicho dataframe se exporta como archivo de Excel llamado "RESULTADOSDER".
+A este excel se le agrega un vector con las abreviaciones de los nombres con fines de simplificar la gráfica.
+Se encuentra el número porcentual de profesores sobre el total de cada una de las universidades.
+Se multiplica el porcentaje de profesorado (como dedicación de recursos) por la cantidad total invertida ($158,000).
+Luego, dicho monto es multiplicado por el nivel de ineficiencia (el complemento de la eficiencia) para saber cuánto dinero fue malgastado.
+La suma de todos los montos da la cantidad total malgastada ($34,000).
+El cociente del gasto público total y la cantidad malgastada da un resultado de un 22% de pérdida sobre el total. 
